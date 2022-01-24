@@ -40,7 +40,7 @@ def load_data(database_filepath):
     return X, Y, category_names
 
 def tokenize(text):
-   """
+    """
     This method will read text and tokenize it
     
     Parametrs:
@@ -69,7 +69,7 @@ def tokenize(text):
 
 
 def build_model():
-      """
+    """
     This method will build a model and return it
     
     Parametrs:
@@ -90,7 +90,7 @@ def build_model():
     return cv
 
 def evaluate_model(model, X_test, Y_test, category_names):
-      """
+    """
     This method will evaluate the model
     
     Parametrs:
@@ -112,7 +112,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
-     """
+    """
     This method will save the model
     
     Parametrs:
