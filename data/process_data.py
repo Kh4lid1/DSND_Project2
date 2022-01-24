@@ -4,7 +4,7 @@ import pandas as pd
 
 def load_data(messages_filepath, categories_filepath):
     
-     """
+    """
     This method will load data
     
     Parametrs: 
@@ -67,7 +67,7 @@ def clean_data(df):
     return df
 def save_data(df, database_filename):
     
-     """
+    """
     This method will save data
     
     Parametrs: 
