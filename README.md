@@ -7,26 +7,35 @@ This project include a web app where an emergency worker can input a new message
 
 ## Project components
 
- There are three components we covered in this project.
+ There are three components we covered in this project (ETL pipeline, ML pipeline, Flask Web App).
 
-### 1. ETL Pipeline
- In a Python script,  process_data.py, write a data cleaning pipeline that:
-- Loads the  messages and categories datasets
-- Merges the two datasets
-- Cleans the data
-- Stores it in a SQLite database
+## Files demonstration 
+1. app
+   - template ( web HTML pages )
+      - master.html ( web HTML page )
+      - go.html ( web HTML page )
+   - run.py ( Web app )
+2. data 
+    - disaster_categories.csv ( file contains data of categories )
+    - disaster_messages.csv ( file contains data of messages )
+    - process_data.py ( code of data processing )
+3. models
+    - train_classifier.py ( code of building the model )
 
-### 2. ML Pipeline
-In a Python script, train_classifier.py, write a machine learning pipeline that:
+## ETL pipeline 
+ETL pipeline at 'process_data.py' file and its been coded to do this thing:
+- loading two dataframes from the files at data folder and merge them togather to do processing later.
+- do steps of cleaning to the merged dataframe.
+- after the cleaning is finished the datafram will be saved in database for modling later
 
-- Loads data from the SQLite database
-- Splits the dataset into training and test sets
-- Builds a text processing and machine learning pipeline
-- Trains and tunes a model using GridSearchCV
-- Outputs results on the test set
-- Exports the final model as a pickle file
 
-### 3. Flask Web App
+## ML pipeline 
+ML pipeline aaat 'process_data.py' file and its been coded to do this thing:
+- loading the dataframe that been saved at ETL pipeline.
+- do steps of NLP processing to the dataframe.
+- after the NLP processing is finished then the peocess of duilding the model and train it will start
+- after training is finished the model will be evaluated and saved
+## Flask Web App
 We used provided  flask web app form Udacity (with some modification).
 
 - we did modify file paths for database and model as needed
@@ -48,5 +57,3 @@ We used provided  flask web app form Udacity (with some modification).
 
 3. Go to http://0.0.0.0:3001/
 
-## Acknowledgments
-I have to thank Udacity for their instructions and help.
