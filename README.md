@@ -57,3 +57,7 @@ We used provided  flask web app form Udacity (with some modification).
 
 3. Go to http://0.0.0.0:3001/
 
+## Acknowledgments
+I would like to thank Udacity for this project, It was fun and useful at the same time.
+And I would like to thank my friends for thier help.
+
